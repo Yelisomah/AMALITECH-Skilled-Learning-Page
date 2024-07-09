@@ -7,46 +7,47 @@
     <link rel="stylesheet" href="mycss.css">
 </head>
 <body>
-       <div class="main">
-            <!--Navigation bar-->
-            <div class="nav-bar">
+    <main>
+        <header >
+            <div class="container nav-bar">
                 <div class="image-nav">
                     <img src="./assets/logo-dark.svg" alt="">
                 </div>
-                <div class="nav-button">
-                    <p>Get Started</p>
+                <div class="button" id="nav-button">
+                    <a href="#">Get Started</a>
                 </div>
             </div>
-
-            <!--Top box for the landing page-->
-            <div class="top-box">
-
+        </header>
+        <section>
+            <div class="container top-box">
                 <!--Top left side of the landing page-->
-                <div class="top-left-box">
-                    <div class="top-left-box-1">
+                <div class="top-box-left">
+                    <div class="top-box-text">
                         <h1>Maximize skill, minimize budget</h1>
-                        <div class="top-left-box-1-p">
-                            <p>Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want</p>
-                        </div>                    
-                        <button class="top-left-box-1-button">
-                            <p>Get Started</p>
-                        </button>
+                        <p>Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want</p>
+                        <div class="button" id="top-box-button">
+                            <a href="#">Get Started</a>
+                        </div>
                     </div>
                 </div>
             
                 <!--Top right side landing page-->
-                <picture class="top-right-box">
-                    <source media="(min-width:769px) and (max-width: 1024px)" srcset="./assets/image-hero-tablet@2x.webp" alt="image-hero-tablet">
-                    <source media="(max-width: 768px)" srcset="./assets/image-hero-mobile.webp" alt="image-hero-mobile">
-                    <img src="./assets/image-hero-desktop@2x.webp" alt="image-hero-desktop">
-                  </picture>
+                <div class="top-box-right">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="./assets/image-hero-mobile.png" alt="image-hero-mobile" id="tab-hero">
+                        <source media="(min-width:768px) and (max-width: 1024px)" srcset="./assets/image-hero-tablet@2x.webp" alt="image-hero-tablet">
+                        <img src="./assets/image-hero-desktop.webp" alt="image-hero-desktop" id="hero" usemap="hero">
+                        <map name=""></map>
+                    </picture>
+                </div>
             </div>
-            
-            <!--Middle box of the page-->
-            <div class="middle-box">
+        </section>
+
+        <section>
+            <div class="container down-box">
                 <!--First box-->
-                <div class="middle-conts" id="first-conts" style="background: linear-gradient(to Bottom, #FF6F48, #F02AAF);">
-                    <h2 id="emp-box">Check out our most popular courses!</h2>
+                <div class="middle-conts" id="first-conts">
+                    <h2>Check out our most popular courses!</h2>
                 </div>
 
                 <!--Animation box-->
@@ -54,14 +55,16 @@
                     
                     <div class="favicons">
                         <!--Favicons-->
-                    <img src="./assets/icon-design.svg" alt="Design" class="favicons-design">
+                        <img src="./assets/icon-design.svg" alt="Design">
                     </div>
-                    <h2>Animation</h2>
-                    <div class="middle-conts-p">
-                        <p>Learn the latest animation techniques to create stunning motion design and captivate your audience</p>
-                    </div>
-                    <div class="middle-conts-button">
-                        <p>Get Started</p>
+                    <div class="conts-text">
+                        <h2>Animation</h2>
+                        <div class="conts-text-p">
+                            <p>Learn the latest animation techniques to create stunning motion design and captivate your audience</p>
+                        </div>
+                        <div class="middle-conts-button">
+                            <a href="#">Get Started</a>
+                        </div>
                     </div>
                 </div>
 
@@ -69,14 +72,16 @@
                 <div class="middle-conts">
                     <div class="favicons">
                         <!--Favicons-->
-                    <img src="./assets/icon-design.svg" alt="Design" class="favicons-design">
+                        <img src="./assets/icon-design.svg" alt="Design">
                     </div>
-                    <h2>Design</h2>
-                    <div class="middle-conts-p">
-                        <p>Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
-                    </div><br>
-                    <div class="middle-conts-button">
-                        <p>Get Started</p>
+                    <div class="conts-text">
+                        <h2>Design</h2>
+                        <div class="middle-conts-p">
+                            <p>Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
+                        </div>
+                        <div class="middle-conts-button">
+                            <a href="#">Get Started</a>
+                        </div>
                     </div>
                 </div>
 
@@ -84,14 +89,16 @@
                 <div class="middle-conts">
                     <div class="favicons">
                         <!--Favicons-->
-                        <img src="./assets/icon-photography.svg" alt="Photography" class="favicons-photography">
+                        <img src="./assets/icon-photography.svg" alt="Photography">
                     </div>
-                    <h2>Photography</h2>
-                    <div class="middle-conts-p">
-                        <p>Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
-                    </div>
-                    <div class="middle-conts-button">
-                        <p>Get Started</p>
+                    <div class="conts-text">
+                        <h2>Photography</h2>
+                        <div class="middle-conts-p">
+                            <p>Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
+                        </div>
+                        <div class="middle-conts-button">
+                            <a href="#">Get Started</a>
+                        </div>
                     </div>
                 </div>
 
@@ -99,14 +106,16 @@
                 <div class="middle-conts">
                     <div class="favicons">
                         <!--Favicons-->
-                        <img src="./assets/icon-crypto.svg" alt="Crypto" class="favicon-crypto">
+                        <img src="./assets/icon-crypto.svg" alt="Crypto">
                     </div>
-                    <h2>Crypto</h2>
-                    <div class="middle-conts-p">
-                        <p>All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
-                    </div>
-                    <div class="middle-conts-button">
-                        <p>Get Started</p>
+                    <div class="conts-text">
+                        <h2>Crypto</h2>
+                        <div class="middle-conts-p">
+                            <p>All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
+                        </div>
+                        <div class="middle-conts-button">
+                            <a href="#">Get Started</a>
+                        </div>
                     </div>
                 </div>
 
@@ -114,31 +123,30 @@
                 <div class="middle-conts">
                     <div class="favicons">
                         <!--Favicons-->
-                        <img src="./assets/icon-business.svg" alt="Business" class="favicon-business">
+                        <img src="./assets/icon-business.svg" alt="Business">
                     </div>
-                    <h2>Business</h2>
-                    <div class="middle-conts-p">
-                        <p>A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+                    <div class="conts-text">
+                        <h2>Business</h2>
+                        <div class="middle-conts-p">
+                            <p>A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+                        </div>
+                        <div class="middle-conts-button">
+                            <a href="#">Get Started</a>
+                        </div>
                     </div>
-                    <div class="middle-conts-button">
-                        <p>Get Started</p>
-                    </div>
-                </div>
-            
-        
-    
+                </div>   
             </div>
-                
-            <!--Bottom box for the landing page of the -->
-            <div class="foot">
+        </section>
+        <footer>
+            <div class="container foot">
                 <div class="foot-image">
-                    <img src="./assets/logo-light.svg" alt="" width="70%">
+                    <img src="./assets/logo-light.svg" alt="foot image">
                 </div>
-                <div class="foot-button">
-                    <p>Get Started</p>
+                <div class="button" id="foot-button">
+                    <a href="#">Get Started</a>
                 </div>
-            </div>  
-
-        </div>  
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
